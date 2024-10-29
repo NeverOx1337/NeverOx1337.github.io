@@ -17,23 +17,23 @@ let myButton = document.createElement("button")
 myButton.innerText = "Кнопка"
 document.body.append(myButton)
 
-let zombie = document.createElement('text')
-zombie.src = '1'
+let zombie = document.createElement('img')
+zombie.src = 'zombie.gif'
 document.body.append(zombie)
 
 let left = 100;
 let step = 1;
 
 zombie.style.position = 'fixed';
-zombie.style.top = '100';
-zombie.style.left = 'left + 100';
+zombie.style.top = '100px';
+zombie.style.left = 'left + px';
 
 function moveZombie(){
     left = left + step;
-    zombie.style.left = left + '100';
+    zombie.style.left = left + 'px';
 }
 
-setInterval(moveZombie, 0);
+setInterval(moveZombie, 100);
 </script>
 </html>
 
