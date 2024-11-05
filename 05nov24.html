@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>5 Ноября 2024. Лекция RGB.</title>
+    <style>
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; 
+        }
+    </style>
 </head>
 <body>
-    <img src="wheel.png" id="wheel">
-    <button onclick="stopWheel()">СТОП</button>
-    <button onclick="startWheel()">СТАРТ</button>
+    <script>
+        
+        const colors = [
+            'rgb(0, 0, 255)',
+            'rgb(0, 255, 0)',
+            'rgb(0, 0, 0)', 
+            'rgb(255, 255, 0)',
+            'rgb(255, 165, 0)',
+            'rgb(128, 0, 128)',
+            'rgb(255, 192, 203)'
+        ];
+
+        colors.forEach(color => {
+            let box = document.createElement('div');
+            box.style.width = '200px';
+            box.style.height = '300px';
+            box.style.backgroundColor = color;
+            document.body.append(box);
+        });
+    </script>
 </body>
-<script>
-    let wheel = document.getElementById('wheel');
-    let angle = 0;
-
-    function rotateWheel(){
-        angle +=2;
-        wheel.style.transform='rotate(' + angle + 'deg)'
-    }
-    let timer;
-
-    function startWheel(){
-        timer = setInterval(rotateWheel, 1);
-    }
-
-    function stopWheel(){
-        clearInterval(timer)
-    }
-
-    let box1 = document.createElement('div');
-    box1.style.width = '200px';
-    box1.style.height = '300px'
-    box1.style.backgroundColor = 'rgb(255, 0 , 0)';
-    document.body.append(box1);
-</script>
 </html>
