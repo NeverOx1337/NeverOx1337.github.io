@@ -3,25 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Опер. системы</title>
+<style>
+    .desk_os{
+    background-color: red;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px purple;
+    }
+
+    .mobile_os{
+    background-color: green;
+    width: 300px;
+    border: 3px solid yellow;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px blue;
+    }
+
+    .server_os{
+    background-color: blue;
+    width: 300px;
+    border: 3px solid purple;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px lightpink;
+    }
+    img{
+        width: 200px;
+    }
+    </style>
+    </head>
+    <body>
+    
     <h1>Операционные системы</h1>
-    <h2>Десктопные</h2>
-    <p>Microsoft Windows</p>
-    <p>macOS</p>
-    <p>Linux</p>
+    <div class="desk_os">
+        <h2>Десктопные</h2>
+         <p>Microsoft Windows</p> <img src="windows.webp" alt="">
+         <p>macOS</p> <img src="macos.webp" alt="">
+         <p>Linux</p><img src="linux.webp" alt="">
+    </div>
 
     <h2>Мобильные ОС</h2>
-    <p>Google Android</p>
-    <p>Apple iOS</p>
-    <p>KaiOS</p>
-    <P>Huawei HarmonyOS</P>
+    <div class="mobile_os">
+         <p>Google Android</p><img src="android.webp" alt="">
+         <p>Apple iOS</p><img src="iphone.webp" alt="">
+         <p>KaiOS</p><img src="kaios.webp" alt="">
+         <P>Huawei HarmonyOS</P><img src="harmonyos.webp" alt="">
+    </div>
 
     <h2>Серверные ОС</h2>
-    <p>Windows Server</p>
-    <p>Ununtu Server</p>
-    <p>CentOS</p>
-    <p>Red Hat Enterprise Linux</p>
+    <div class="server_os">
+    <p>Windows Server</p><img src="serverwindows.webp" alt="">
+    <p>Ununtu Server</p><img src="ubuntu.webp" alt="">
+    <p>CentOS</p><img src="centos.webp" alt="">
+    <p>Red Hat Enterprise Linux</p><img src="redhat.webp" alt="">
+    </div>
 </body>
 </html>
